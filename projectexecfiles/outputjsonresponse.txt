@@ -1,0 +1,47 @@
+{
+    "message": "File processed successfully.",
+    "saved_count": 26,
+    "rejected_count": 3,
+    "skipped_count": 2,
+    "errors": [
+        {
+            "row": 28,
+            "data": {
+                "name": "InvalidAge",
+                "email": "invalidage@example.com",
+                "age": "twenty"
+            },
+            "errors": {
+                "age": [
+                    "A valid integer is required."
+                ]
+            }
+        },
+        {
+            "row": 29,
+            "data": {
+                "name": "MissingEmail",
+                "email": "",
+                "age": "30"
+            },
+            "errors": {
+                "email": [
+                    "This field may not be blank."
+                ]
+            }
+        },
+        {
+            "row": 30,
+            "data": {
+                "name": "BlankName",
+                "email": "",
+                "age": "25"
+            },
+            "errors": {
+                "email": [
+                    "This field may not be blank."
+                ]
+            }
+        }
+    ]
+}
